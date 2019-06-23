@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="@drawable/phone1"
     android:orientation="vertical">
 
     <TextView
@@ -14,26 +15,32 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
+        android:textColor="#000"
         android:text="Carbon Emmisions"
         />
   <LinearLayout
-      android:layout_marginTop="60dp"
+      android:layout_marginTop="30dp"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      android:orientation="horizontal">
+      android:orientation="vertical">
 
     <ImageView
-        android:layout_width="150dp"
-        android:layout_height="150dp"
+        android:padding="7dp"
+        android:background="@drawable/carbonpic"
+        android:layout_marginLeft="120dp"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
         android:scaleType="fitCenter"
         android:src="@drawable/carbon"/>
 
       <TextView
+          android:gravity="center"
           android:layout_marginTop="20dp"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:textSize="20sp"
-          android:text="Carbon is non-metallic and tetravalent- making four electrons available to form covalent chemical bonds"
+          android:textSize="30sp"
+          android:textColor="#cecece"
+          android:text="Carbon is a non-metallic and tetravalent-element, it is symbol C in the periodic table"
       />
 
   </LinearLayout>
@@ -43,14 +50,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
-        android:textColor="#000"
+        android:textColor="#cecece"
         android:textAlignment="center"
         android:text="   The problem that we're trying to solve is      high Co2 emmisions. "/>
 
 
     <Button
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
-        android:layout_marginLeft="100dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="opencarbon"
