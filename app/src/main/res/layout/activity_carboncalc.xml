@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/phone2"
     tools:context=".Carboncalc">
 
     <TextView
@@ -17,13 +18,15 @@
         android:text=" In what way do you input carbon in to the atmosphere   "/>
 
     <LinearLayout
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
     <CheckBox
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="25dp"
+        android:id="@+id/gas"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="GASOLINE"
@@ -33,12 +36,55 @@
 
 
      <CheckBox
+         android:id="@+id/deisel"
+         android:layout_marginRight="10dp"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:textSize="30sp"
-         android:text="DEISEL"/>
+         android:text="DIESEL"/>
 
     </LinearLayout>
+
+
+    <EditText
+        android:inputType="number"
+        android:id="@+id/input"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:hint="gallons used"
+        />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/submit"
+        android:layout_width="220dp"
+        android:layout_height="80dp"
+        android:textSize="20sp"
+        android:text="Submit"/>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/emmision"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="#010"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="  Your Co2 release " />
+
+
+
+
+
+
+
+
 
 
 </LinearLayout>
